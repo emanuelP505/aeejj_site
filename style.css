@@ -475,47 +475,61 @@ a:focus-visible {
   align-items: center;
   gap: 14px;
   margin-top: 22px;
+  flex-wrap: wrap;
 }
 
 .footer-social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   background: #141414;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.25s ease;
 }
 
-.footer-social a[title="Telefone"]:hover {
+/* Hover corrigidos */
+.footer-social a[title="Telefone"]:hover,
+.footer-social a[title="Telefone"]:active {
   transform: translateY(-4px);
   border-color: var(--vermelho);
   background: var(--vermelho);
-  color: #ffffff;
 }
-.footer-social a[title="WhatsApp"]:hover {
+
+.footer-social a[title="WhatsApp"]:hover,
+.footer-social a[title="WhatsApp"]:active {
   transform: translateY(-4px);
   border-color: var(--verde-whatsapp);
   background: var(--verde-whatsapp);
-  color: #ffffff;
 }
 
-.footer-social a[title="Instagram"]:hover {
+.footer-social a[title="Instagram"]:hover,
+.footer-social a[title="Instagram"]:active {
   transform: translateY(-4px);
+  border-color: transparent;
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-    border-color: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-
   color: #ffffff;
 }
-
-
 
 .footer-social a:focus-visible {
   outline: 2px solid var(--vermelho);
   outline-offset: 4px;
 }
 
+/* MOBILE - botões maiores ainda */
+@media (max-width: 680px) {
+  .footer-social {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  
+  .footer-social a {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+}
