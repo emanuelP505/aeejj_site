@@ -1,0 +1,9 @@
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Documentos e ficheiros fora do site
+*.pdf
+*.docx
+*.zip
