@@ -504,12 +504,15 @@ a:focus-visible {
   color: #ffffff;
 }
 
-.footer-social a[title="Facebook"]:hover {
+.footer-social a[title="Instagram"]:hover {
   transform: translateY(-4px);
-background-color: #1877F2; /* Azul oficial do Facebook */
-    border-color: #1877F2;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-color: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+
   color: #ffffff;
 }
+
+
 
 .footer-social a:focus-visible {
   outline: 2px solid var(--vermelho);
