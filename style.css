@@ -109,7 +109,7 @@ a {
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)),
-    url("./images/hero-bg.jpg") center / cover no-repeat;
+    url("./images/hero-bg.png") center / cover no-repeat;
 }
 
 .hero-content {
